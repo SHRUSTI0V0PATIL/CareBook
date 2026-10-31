@@ -1,0 +1,329 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  color: #263746;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 17px;
+}
+
+.primary {
+  background: #087f8c;
+  color: white;
+}
+
+.primary:hover {
+  background: #05636d;
+}
+
+.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.full {
+  width: 100%;
+}
+
+.outline {
+  background: white;
+  color: #087f8c;
+  border: 1px solid #087f8c;
+}
+
+.danger {
+  background: #c94c4c;
+  color: white;
+  align-self: center;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #087f8c;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #dff4f2, #edf3fa);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 390px;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px #00000012;
+}
+
+.auth-card h2 {
+  margin-bottom: 5px;
+}
+
+.auth-card input,
+.filters input,
+.filters select,
+.booking input {
+  width: 100%;
+  padding: 12px;
+  margin: 9px 0;
+  border: 1px solid #d5dfe5;
+  border-radius: 7px;
+  background: white;
+}
+
+.auth-card .primary {
+  margin-top: 15px;
+}
+
+.switch {
+  color: #087f8c;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+header {
+  background: white;
+  padding: 17px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px #0000000a;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero {
+  padding: 40px 6%;
+  background: #dff2ef;
+}
+
+.hero h1 {
+  color: #087f8c;
+  margin-bottom: 8px;
+}
+
+.hero p, .muted {
+  color: #687b86;
+}
+
+nav {
+  background: #087f8c;
+  padding: 10px 6%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav button {
+  color: white;
+  background: transparent;
+}
+
+nav button.active {
+  background: #ffffff30;
+}
+
+main {
+  padding: 30px 6%;
+  min-height: 65vh;
+}
+
+main h2 {
+  color: #087f8c;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  max-width: 750px;
+  margin: 20px 0;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 15px #0000000b;
+  margin: 15px 0;
+}
+
+.doctor-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #e0f3f1;
+  color: #087f8c;
+  font-size: 27px;
+  border-radius: 50%;
+}
+
+.doctor-card h3, .appointment h3 {
+  color: #087f8c;
+}
+
+.speciality {
+  color: #087f8c;
+  font-weight: bold;
+}
+
+.booking {
+  max-width: 550px;
+  margin-top: 30px;
+}
+
+.booking label {
+  display: block;
+  margin-top: 15px;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.slots button {
+  background: #e1f1f0;
+  color: #087f8c;
+}
+
+.slots button.chosen {
+  background: #087f8c;
+  color: white;
+}
+
+.appointment {
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.status {
+  display: inline-block;
+  background: #e8edf0;
+  color: #53636d;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.status.confirmed {
+  background: #e0f3e8;
+  color: #197344;
+}
+
+.message {
+  background: #e0f3f1;
+  color: #145b60;
+  padding: 13px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+.message button {
+  float: right;
+  padding: 0 8px;
+  background: transparent;
+  color: #145b60;
+  font-size: 20px;
+}
+
+.timeline {
+  border-left: 3px solid #087f8c;
+  margin: 30px 0 30px 12px;
+  padding-left: 25px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -34px;
+  top: 25px;
+  width: 15px;
+  height: 15px;
+  background: #087f8c;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #71818b;
+  background: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .appointment {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
+.reminder-box {
+  background: #fff4d6;
+  border-left: 5px solid #e6a23c;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.reminder-box h3 {
+  color: #8a5b13;
+}
+
+.reminder-box p {
+  color: #654b1b;
+}
